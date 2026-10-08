@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — rclone Drive Access</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1a1a; --muted: #5a5a5a;
+    --line: #e4e4e4; --accent: #8c2f24;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141414; --fg: #ececec; --muted: #a0a0a0;
+      --line: #2c2c2c; --accent: #d4714f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    padding: 16px;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 0 4rem; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 .4rem; letter-spacing: -.01em; }
+  .sub { color: var(--muted); margin: 0 0 2.5rem; font-size: .9rem; }
+  h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: .06em;
+       color: var(--muted); margin: 2.25rem 0 .75rem; font-weight: 600; }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: .4rem; }
+  a { color: var(--accent); }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .9em;
+         background: color-mix(in srgb, var(--fg) 7%, transparent);
+         padding: .1em .35em; border-radius: 3px; }
+  footer { border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 1.25rem;
+           color: var(--muted); font-size: .875rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="sub">rclone Drive Access · Last updated 8 October 2026</p>
+
+  <p>
+    This OAuth client is a personal utility with a single user: the account owner. It is
+    not offered to the public and has no other users. See the
+    <a href="index.html">overview</a> for what it does.
+  </p>
+
+  <h2>What data is accessed</h2>
+  <p>
+    When authorised, the client uses the Google Drive API to read file names, folder
+    structure, file metadata, and file contents from Google Drive accounts belonging to
+    the account owner. It requests read-only Drive access and therefore cannot create,
+    modify, or delete anything in Drive.
+  </p>
+  <p>It does not access any other Google service, and it accesses no other person's account.</p>
+
+  <h2>How that data is used</h2>
+  <p>
+    Files are copied to local storage on the owner's own computer and converted into
+    plain-text and Markdown files for a personal notes archive. That is the only purpose.
+  </p>
+
+  <h2>How data is stored</h2>
+  <ul>
+    <li>Downloaded files and converted notes are stored locally on the owner's computer.</li>
+    <li>
+      The OAuth access and refresh tokens are stored in a local <code>rclone</code>
+      configuration file on that computer. They are not transmitted anywhere except to
+      Google's own authentication endpoints.
+    </li>
+    <li>There is no server, no database, and no hosted component of any kind.</li>
+  </ul>
+
+  <h2>Data sharing</h2>
+  <p>
+    No data is shared, sold, rented, published, or transferred to any third party. No
+    analytics, tracking, advertising, or telemetry is used. No data is sent to the operator
+    of this web page, because this page is static and collects nothing.
+  </p>
+  <p>
+    Google Drive data is never used to train machine-learning or AI models, and is never
+    transferred to anyone for that purpose.
+  </p>
+
+  <h2>Retention and deletion</h2>
+  <p>
+    Local copies are retained for as long as the owner finds them useful and can be deleted
+    at any time by deleting the local files. Authorisation can be revoked at any time from
+    the Google Account permissions page at
+    <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>,
+    which immediately ends the client's access.
+  </p>
+
+  <h2>Children</h2>
+  <p>The client is not directed at children and has no users other than the account owner.</p>
+
+  <h2>Changes</h2>
+  <p>
+    If this policy changes, the revised version will be published on this page with an
+    updated date.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy can be sent to the email address listed as the developer
+    contact on the OAuth consent screen for this project.
+  </p>
+
+  <footer>
+    <a href="index.html">← Overview</a>
+  </footer>
+</main>
+</body>
+</html>
